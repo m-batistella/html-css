@@ -6,25 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astronauta</title>
     <style>
-        .imgs {
+        #container {
+            background-image: url(espaco.jpg);
+            background-size: 100% 100%;
+
             position: relative;
-            top: 0;
-            left: 0;
-        }
-        img {
+            height: 100vh;
             width: 100%;
         }
 
-        .astro {
-            max-width: 450px;
-            margin: auto;
+        #conteudo {
+            background-image: url(astronauta.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <div class="imgs">
-        <img src="espaco.jpg" alt="Espaço">
-        <img src="astronauta.png" alt="Astronauta" class="astro">
-    </div>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
